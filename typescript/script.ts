@@ -128,8 +128,10 @@ let finalValue = "A String";
 console.log(typeof finalValue);
 
 
-
-
+// Never
+function neverReturns():never {
+    throw new Error('An Error');
+}
 
 
 
