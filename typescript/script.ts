@@ -116,9 +116,12 @@ let complex2: Complex = {
 console.log(complex2.ouput(false));
 
 
+// Multi type with Union.
+let myRealAgeReal : number | string = 23;
+myRealAgeReal = 24;
+myRealAgeReal = 'hello world';
 
-
-
+console.log(myRealAgeReal);
 
 
 
