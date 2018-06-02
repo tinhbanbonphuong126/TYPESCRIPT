@@ -123,7 +123,9 @@ myRealAgeReal = 'hello world';
 
 console.log(myRealAgeReal);
 
-
+// Check types
+let finalValue = "A String";
+console.log(typeof finalValue);
 
 
 
