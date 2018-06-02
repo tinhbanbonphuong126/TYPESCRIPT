@@ -61,4 +61,63 @@ const returnMyname = (): number => {
     return myAge;
 };
 
+const voidFunction = (): void => {
+    console.log('Return void function. KEKE');
+
+};
 console.log(returnMyname());
+
+// Argument types
+const argumentTypeFunction = (x: number, y: number): number => {
+
+    return x * y;
+};
+
+
+// Functions as type
+let myFunction: (a: number, b: number) => number;
+
+myFunction = argumentTypeFunction;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
