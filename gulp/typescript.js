@@ -9,12 +9,12 @@ var SRC = 'typescript/**/*.ts';
 var DESTINATION = 'js';
 
 
+var tsProject = ts.createProject('../tsconfig.json');
+
 gulp.task('typescript', function() {
     return gulp.src(SRC)
         .pipe(sourcemaps.init()) // This means sourcemaps will be generated
-        .pipe(ts({
-            // ...
-        }))
+        .pipe(tsProject())
         // .pipe(...) // You can use other plugins that also support gulp-sourcemaps
         .pipe(sourcemaps.write('./')) // Now the sourcemaps are added to the .js file
         .pipe(gulp.dest(DESTINATION));

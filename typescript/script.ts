@@ -134,8 +134,15 @@ function neverReturns():never {
 }
 
 
+// Nullable
+let canBenull: number | null = 12;
+
+canBenull = null;
+
+console.log(canBenull);
 
 
+//
 
 
 
