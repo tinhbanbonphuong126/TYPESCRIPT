@@ -80,19 +80,40 @@ let myFunction: (a: number, b: number) => number;
 myFunction = argumentTypeFunction;
 
 
+// Object and types
+
+let userData: {name: string, age: number} = {
+    name: 'Max',
+    age: 27
+};
+
+userData = {
+    name: 'Happy new years',
+    age: 33
+}
+console.log(userData);
 
 
+// Putting all together to a complex object. :)
+let complex: {data: number[], ouput: (all: boolean) => number[]} = {
+    data: [1, 2, 3],
+    ouput: function (all: boolean): number[] {
+        return this.data;
+    }
+};
 
 
+// Type Alias
+type Complex = { data: number[], ouput: (all: boolean) => number[] };
 
+let complex2: Complex = {
+    data: [1, 2, 3],
+    ouput: function (all: boolean): number[] {
+        return this.data;
+    }
+};
 
-
-
-
-
-
-
-
+console.log(complex2.ouput(false));
 
 
 

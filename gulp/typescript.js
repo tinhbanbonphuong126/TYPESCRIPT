@@ -17,6 +17,6 @@ gulp.task('typescript', function() {
         }))
         // .pipe(...) // You can use other plugins that also support gulp-sourcemaps
         .pipe(sourcemaps.write('./')) // Now the sourcemaps are added to the .js file
-        .pipe(gulp.dest(DESTINATION))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest(DESTINATION));
+        // .pipe(browserSync.stream());
 });
