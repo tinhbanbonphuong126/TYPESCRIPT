@@ -1,0 +1,22 @@
+{
+  "name": "TYPESCRIPT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "gulp-typescript": "^4.0.2",
+    "require-dir": "^1.0.0",
+    "typescript": "^2.9.1"
+  }
+}
