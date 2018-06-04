@@ -142,11 +142,13 @@ canBenull = null;
 console.log(canBenull);
 
 
-//
+// Unused Parameter
 
+function hello(a: number, b: number): number {
+    return a * b;
+}
 
-
-
+console.log(hello(2,5));
 
 
 

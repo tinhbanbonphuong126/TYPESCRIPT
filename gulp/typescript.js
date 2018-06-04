@@ -9,7 +9,7 @@ var SRC = 'typescript/**/*.ts';
 var DESTINATION = 'js';
 
 
-var tsProject = ts.createProject('../tsconfig.json');
+var tsProject = ts.createProject('./tsconfig.json', {noImplicitAny: true});
 
 gulp.task('typescript', function() {
     return gulp.src(SRC)
