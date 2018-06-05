@@ -1,6 +1,8 @@
 (function () {
     interface FirstName {
-        firstName: string
+        firstName: string,
+        lastName?: string,
+        [propName: string]: any
     }
 
     const face = (people: FirstName): void => {
@@ -9,7 +11,7 @@
 
 
     const changeFace = (people: FirstName): void => {
-        people.firstName = 'Hello world';
+        people.firstName = 'Changed First';
     };
 
     let people = {
@@ -17,7 +19,8 @@
         lastName: 'Que'
     };
 
-    face(people);
+    face({firstName: 'First'});
+    face({firstName: 'First', lastName: 'Last', randomName: 'Random'});
     changeFace(people);
     face(people);
 })();
