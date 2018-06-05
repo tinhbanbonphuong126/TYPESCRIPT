@@ -2,7 +2,9 @@
     interface FirstName {
         firstName: string,
         lastName?: string,
-        [propName: string]: any
+        [propName: string]: any,
+
+        aisatsu(lastName: string): void;
     }
 
     const face = (people: FirstName): void => {
@@ -16,11 +18,20 @@
 
     let people = {
         firstName: 'Pham',
-        lastName: 'Que'
+        lastName: 'Que',
+
+        aisatsu(lastName: string): void {
+            console.log(`Hello Last Name ${lastName}`);
+        }
     };
 
-    face({firstName: 'First'});
-    face({firstName: 'First', lastName: 'Last', randomName: 'Random'});
+    // face({firstName: 'First'});
+    // face({firstName: 'First', lastName: 'Last', randomName: 'Random'});
+
+    face(people);
     changeFace(people);
     face(people);
+
+    people.aisatsu('Michel');
+
 })();
