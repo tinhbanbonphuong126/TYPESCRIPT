@@ -5,11 +5,15 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 
 
-var SRC = 'typescript/**/*.ts';
+var SRC = ['typescript/**/*.ts'];
 var DESTINATION = 'js';
 
 
-var tsProject = ts.createProject('./tsconfig.json', {noImplicitAny: true});
+var tsProject = ts.createProject(
+    './tsconfig.json',
+    {
+        noImplicitAny: true
+    });
 
 gulp.task('typescript', function() {
     return gulp.src(SRC)

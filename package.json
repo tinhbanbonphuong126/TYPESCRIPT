@@ -17,6 +17,7 @@
   "dependencies": {
     "gulp-typescript": "^4.0.2",
     "require-dir": "^1.0.0",
+    "systemjs": "^0.21.4",
     "typescript": "^2.9.1"
   }
 }
