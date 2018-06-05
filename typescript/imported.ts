@@ -1,6 +1,8 @@
-///<reference path="_circleMath.ts"/>
+import {circleMath} from './_circleMath';
+import {rectangleMath} from "./_rectangleMath";
+import {squareMath} from "./_squareMath";
 
-import {circleMath} from './_circleMath'
-
-console.log(circleMath());
+console.log(circleMath(10));
+console.log(rectangleMath(2,3));
+console.log(squareMath(100));
 
