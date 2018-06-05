@@ -2,6 +2,7 @@
     interface FirstName {
         firstName: string,
         lastName: string,
+
         [propName: string]: any,
 
         aisatsu(lastName: string): void;
@@ -40,6 +41,7 @@
 
     class Pupil implements FirstName {
         [propName: string]: any;
+
         firstName: string;
         lastName: string;
 
@@ -67,6 +69,27 @@
     };
 
     console.log(myDoubleFunction(12, 13));
+
+    // Interface Inheritance
+    console.log('Interface Inheritance');
+
+    interface AgedPerson extends FirstName {
+        age: number,
+        tall: number
+    }
+
+    let oldPerson: AgedPerson = {
+        age: 100,
+        tall: 200,
+        firstName: "Age",
+        lastName: "Person",
+        aisatsu(lastName: string): void {
+            console.log('Aged Person');
+        }
+
+    };
+
+    oldPerson.aisatsu('Hello world');
 
 })();
 
