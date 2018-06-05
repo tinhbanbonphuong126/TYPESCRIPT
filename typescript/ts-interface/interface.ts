@@ -1,7 +1,7 @@
 (function () {
     interface FirstName {
         firstName: string,
-        lastName?: string,
+        lastName: string,
         [propName: string]: any,
 
         aisatsu(lastName: string): void;
@@ -33,5 +33,26 @@
     face(people);
 
     people.aisatsu('Michel');
+
+
+    // Interface with Class
+    console.log("Interface with Class");
+
+    class Pupil implements FirstName {
+        [propName: string]: any;
+        firstName: string;
+        lastName: string;
+
+        aisatsu(lastName: string): void {
+            console.log('おはよございます' + lastName);
+        }
+
+    }
+
+    let person = new Pupil();
+    person.firstName = 'Pham';
+    person.lastName = 'Que';
+
+    person.aisatsu('Mark');
 
 })();
