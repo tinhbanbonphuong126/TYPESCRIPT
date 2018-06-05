@@ -55,4 +55,64 @@
 
     person.aisatsu('Mark');
 
+
+    // Interface and Function Type.
+    interface DoubleValueFunc {
+        (number1: number, number2: number): number;
+    }
+
+    let myDoubleFunction: DoubleValueFunc;
+    myDoubleFunction = (number1: number, number2: number) => {
+        return (number1 * number2);
+    }
+
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
