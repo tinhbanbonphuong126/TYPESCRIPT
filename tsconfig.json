@@ -6,7 +6,8 @@
     "strictNullChecks": true,
     "rootDir": "./",
     "outDir": "./js",
-    "removeComments": true
+    "removeComments": true,
+    "experimentalDecorators": true
   },
   "exclude": [
     "node_modules",

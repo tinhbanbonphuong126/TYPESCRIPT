@@ -10,7 +10,7 @@
 
     const face = (people: FirstName): void => {
         console.log(`Hello ${people['firstName']}`);
-    };
+    }
 
 
     const changeFace = (people: FirstName): void => {
@@ -35,7 +35,6 @@
 
     people.aisatsu('Michel');
 
-
     // Interface with Class
     console.log("Interface with Class");
 
@@ -56,7 +55,6 @@
     person.lastName = 'Que';
 
     person.aisatsu('Mark');
-
 
     // Interface and Function Type.
     interface DoubleValueFunc {
@@ -92,9 +90,6 @@
     oldPerson.aisatsu('Hello world');
 
 })();
-
-
-
 
 
 
