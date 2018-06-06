@@ -9,6 +9,23 @@
     <h1>Integrated JQuery to Typescript</h1>
 
 
-    <script type="text/javascript" src="./js/jquery/jquery.js"></script>
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.config({
+            map: {
+                "jQuery": "node_modules/jquery/dist/jquery.min.js"
+            },
+            baseURL: '/',
+            defaultExtension: true,
+            packages: {
+                "/js": {
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        SystemJS.import(
+            './js/jquery/jquery.js',
+        );
+    </script>
 </body>
 </html>

@@ -1,2 +1,3 @@
-console.log('Hello World')
+import "jQuery"
 
+$('body').css('background', 'red')
