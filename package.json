@@ -4,7 +4,9 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -d --watch",
+    "build:prod": "webpack -p"
   },
   "keywords": [],
   "author": "",
@@ -12,14 +14,18 @@
   "devDependencies": {
     "@types/jquery": "^3.3.2",
     "browser-sync": "^2.24.4",
+    "expose-loader": "^0.7.5",
     "gulp": "^3.9.1",
     "gulp-changed": "^3.2.0",
     "gulp-changed-in-place": "^2.3.0",
     "gulp-sourcemaps": "^2.6.4",
     "jquery": "^3.3.1",
+    "ts-loader": "^4.3.1",
     "tslint": "^5.10.0",
     "tslint-config-standard": "^7.0.0",
-    "typescript": "^2.9.1"
+    "typescript": "^2.9.1",
+    "webpack": "^4.11.1",
+    "webpack-command": "^0.2.0"
   },
   "dependencies": {
     "gulp-typescript": "^4.0.2",

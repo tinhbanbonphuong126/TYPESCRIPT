@@ -1,18 +1,29 @@
+// Integrated with gulp
+//{
+//  "compilerOptions": {
+//    "module": "commonjs",
+//    "target": "es5",
+//    "sourceMap": false,
+//    "strictNullChecks": true,
+//    "rootDir": "./",
+//    "outDir": "./src",
+//    "removeComments": true,
+//    "experimentalDecorators": true
+//  },
+//  "exclude": [
+//    "node_modules",
+//  ],
+//  "include": [
+//    "typescript/**/*.ts",
+//  ]
+//}
+
+
+// Integrated with webpack
 {
   "compilerOptions": {
-    "module": "commonjs",
     "target": "es5",
-    "sourceMap": false,
-    "strictNullChecks": true,
-    "rootDir": "./",
-    "outDir": "./src",
-    "removeComments": true,
-    "experimentalDecorators": true
-  },
-  "exclude": [
-    "node_modules",
-  ],
-  "include": [
-    "typescript/**/*.ts",
-  ]
+    "noImplicitAny": false,
+    "sourceMap": true
+  }
 }
