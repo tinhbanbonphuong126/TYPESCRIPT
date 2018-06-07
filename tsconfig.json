@@ -5,7 +5,7 @@
     "sourceMap": false,
     "strictNullChecks": true,
     "rootDir": "./",
-    "outDir": "./js",
+    "outDir": "./src",
     "removeComments": true,
     "experimentalDecorators": true
   },
@@ -13,6 +13,6 @@
     "node_modules",
   ],
   "include": [
-    "typescript/**/*.ts"
+    "typescript/**/*.ts",
   ]
 }
