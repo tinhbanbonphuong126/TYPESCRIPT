@@ -10528,7 +10528,7 @@ module.exports = g;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js?fe57");
-$('body').css('background', 'red');
+$('body').css('width', '100px');
 
 
 /***/ }),
@@ -10544,7 +10544,7 @@ $('body').css('background', 'red');
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js?fe57");
-$('body').css('background', 'yellow');
+$('body').css('background', 'red');
 
 
 /***/ }),
@@ -10560,7 +10560,7 @@ $('body').css('background', 'yellow');
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js?fe57");
-$('body').css('background', 'blue');
+$('body').css('border', '1px solid blue');
 
 
 /***/ }),

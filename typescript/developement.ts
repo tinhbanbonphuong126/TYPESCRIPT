@@ -1,4 +1,3 @@
 import $ = require('jquery')
 
-$('body').css('background', 'yellow')
-
+$('body').css('background', 'red')

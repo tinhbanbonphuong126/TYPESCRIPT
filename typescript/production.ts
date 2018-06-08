@@ -1,3 +1,3 @@
 import $ = require('jquery')
 
-$('body').css('background', 'blue')
+$('body').css('border', '1px solid blue')

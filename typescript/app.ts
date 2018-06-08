@@ -1,3 +1,3 @@
 import $ = require('jquery')
 
-$('body').css('background', 'red')
+$('body').css('width', '100px')

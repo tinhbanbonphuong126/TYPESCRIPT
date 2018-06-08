@@ -8,6 +8,9 @@ module.exports = {
         filename: "bundle.js"
     },
     devtool: 'source-map',
+    devServer: {
+        contentBase: './'
+    },
     module: {
         rules: [
             // all
